@@ -24,11 +24,3 @@ class Features:
               "Standard Deviation: " + str(sd) + '\n' +
               'Skewness: ' + str(self.get_skewness()) + '\n' +
               'Kurtosis: ' + str(self.get_kurtosis()) + '\n')
-        
-'''An example with random data stored in an array'''     
-arr = np.random.rand(40) # Assume we get this from the pre-processed data?
-data = Features(arr)
-print(data.get_kurtosis())
-print(data.get_skewness())
-print('\n')
-data.summarize()
