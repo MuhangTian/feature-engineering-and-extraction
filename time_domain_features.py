@@ -1,16 +1,15 @@
 from math import sqrt
 from sklearn.metrics import mean_squared_error
+
 import numpy as np
+import scipy.stats as ss
 
-class time_domain_features():
-    def __init__(self, data) -> None:
-        self.data = data
-        
-    def root_mean_squared(self):
-        sum = np.sum(np.square(self.data))
-        rms = sqrt(sum/len(self.data))
-        return rms
+def root_mean_square(data):
+    sum = np.sum(np.square(data))
+    rms = sqrt(sum/len(data))
+    return rms
 
+def 
     
 '''Example'''
 arr = np.random.rand(10)
