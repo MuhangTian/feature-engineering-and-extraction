@@ -28,7 +28,7 @@ def energy(data):
     
     Parameters
     ----------
-    data : (array like)
+    data : array like
         array of data need to get energy from
     
     Returns
@@ -44,11 +44,13 @@ def average_power(data):
 
     Parameters
     ----------
-        data (array like): array of data of interest, to evaluate average power
+    data : array like
+        array of data of interest, to evaluate average power
 
     Returns
     -------
-        float: numerical value of average power
+    avg_power : float
+        numerical value of average power
     """
     num = len(data)
     data = energy(data)
